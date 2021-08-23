@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
-
+    <!-- 안어려워서 리니어 레이아웃으로 한다. -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="결과"
+        android:textSize="20sp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+<!--마진 스타트를 사용하는 이유는 Support layout mirroring
+아랍어 지원등 rtl ltl 등을 반영 하기 위해서
+https://developer.android.com/training/basics/supporting-devices/languages?hl=ko
+
+-->
+    <TextView
+        android:id="@+id/resulttextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="40dp"
+        android:textSize="16sp"
+        tools:text="결과값입니다." />
+
+    <TextView
+        android:id="@+id/firebasetoken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Firebase 토큰"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+    <!--textIsSelectable 은 토큰을 복사해서 쓸 수 있어야 하니까 포커싱및 복사 가능해짐-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="40dp"
+        android:text="Loading..."
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
