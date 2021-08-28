@@ -40,6 +40,7 @@ https://developer.android.com/training/basics/supporting-devices/languages?hl=ko
         tools:ignore="HardcodedText" />
     <!--textIsSelectable 은 토큰을 복사해서 쓸 수 있어야 하니까 포커싱및 복사 가능해짐-->
     <TextView
+        android:id="@+id/firebasetokenview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
