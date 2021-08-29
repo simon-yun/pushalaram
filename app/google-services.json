@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "838495022938",
+    "project_id": "pushalram-13e81",
+    "storage_bucket": "pushalram-13e81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838495022938:android:6433ace62db888b0b78d63",
+        "android_client_info": {
+          "package_name": "com.example.pushalaram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838495022938-ijot5o2og617vbe8jf8lscs0opc6r07f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbiNb8iSClM-_b2zOMvxOCVciJrSWhrlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838495022938-ijot5o2og617vbe8jf8lscs0opc6r07f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
